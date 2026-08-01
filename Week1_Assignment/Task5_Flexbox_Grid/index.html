@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Task 5 — Flexbox &amp; CSS Grid Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="page-header">
+  <p class="eyebrow">// layout systems</p>
+  <h1>Flexbox &amp; CSS Grid</h1>
+  <p class="subtitle">Two layout engines, side by side, with the same card content.</p>
+</header>
+
+<main>
+
+  <!-- FLEXBOX SECTION -->
+  <section class="demo-section">
+    <div class="demo-heading">
+      <h2><span class="tag-label">display: flex</span> Flexbox Layout</h2>
+      <p>One-dimensional layout — great for navbars, rows of cards, and toolbars.</p>
+    </div>
+
+    <h3 class="sub-label">Row · space-between · wraps on small screens</h3>
+    <div class="flex-demo flex-row">
+      <div class="demo-card">1</div>
+      <div class="demo-card">2</div>
+      <div class="demo-card">3</div>
+      <div class="demo-card">4</div>
+    </div>
+
+    <h3 class="sub-label">Column · centered · fixed height</h3>
+    <div class="flex-demo flex-col">
+      <div class="demo-card">A</div>
+      <div class="demo-card">B</div>
+      <div class="demo-card">C</div>
+    </div>
+
+    <h3 class="sub-label">Classic holy-grail toolbar</h3>
+    <div class="flex-demo flex-toolbar">
+      <div class="demo-card small">Logo</div>
+      <div class="demo-card small grow">Search…</div>
+      <div class="demo-card small">Profile</div>
+    </div>
+  </section>
+
+  <!-- GRID SECTION -->
+  <section class="demo-section alt">
+    <div class="demo-heading">
+      <h2><span class="tag-label">display: grid</span> CSS Grid Layout</h2>
+      <p>Two-dimensional layout — great for full page structure and card galleries.</p>
+    </div>
+
+    <h3 class="sub-label">Auto-fit responsive card grid</h3>
+    <div class="grid-demo grid-cards">
+      <div class="demo-card">1</div>
+      <div class="demo-card">2</div>
+      <div class="demo-card">3</div>
+      <div class="demo-card">4</div>
+      <div class="demo-card">5</div>
+      <div class="demo-card">6</div>
+    </div>
+
+    <h3 class="sub-label">Named-area page layout</h3>
+    <div class="grid-demo grid-layout">
+      <div class="demo-card area-header">Header</div>
+      <div class="demo-card area-sidebar">Sidebar</div>
+      <div class="demo-card area-main">Main Content</div>
+      <div class="demo-card area-footer">Footer</div>
+    </div>
+
+    <h3 class="sub-label">Bento-style spanning grid</h3>
+    <div class="grid-demo grid-bento">
+      <div class="demo-card bento-1">Wide</div>
+      <div class="demo-card bento-2">Tall</div>
+      <div class="demo-card bento-3">Small</div>
+      <div class="demo-card bento-4">Small</div>
+      <div class="demo-card bento-5">Wide</div>
+    </div>
+  </section>
+
+  <!-- PRODUCT CARDS (real-world combo example) -->
+  <section class="demo-section">
+    <div class="demo-heading">
+      <h2><span class="tag-label">grid + flex</span> Real-World Card Gallery</h2>
+      <p>Grid arranges the gallery; flexbox arranges the content inside each card.</p>
+    </div>
+    <div class="grid-demo product-gallery">
+      <article class="gallery-card">
+        <div class="gallery-img">🪴</div>
+        <div class="gallery-body">
+          <h4>Ceramic Planter</h4>
+          <p>Minimal matte-glazed pot for small plants.</p>
+          <div class="gallery-footer">
+            <span class="price">$24</span>
+            <button class="btn-mini">Add</button>
+          </div>
+        </div>
+      </article>
+      <article class="gallery-card">
+        <div class="gallery-img">🕯️</div>
+        <div class="gallery-body">
+          <h4>Soy Candle</h4>
+          <p>Hand-poured, 40-hour burn time.</p>
+          <div class="gallery-footer">
+            <span class="price">$18</span>
+            <button class="btn-mini">Add</button>
+          </div>
+        </div>
+      </article>
+      <article class="gallery-card">
+        <div class="gallery-img">📓</div>
+        <div class="gallery-body">
+          <h4>Dot Grid Notebook</h4>
+          <p>160 gsm paper, 120 pages.</p>
+          <div class="gallery-footer">
+            <span class="price">$14</span>
+            <button class="btn-mini">Add</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <p>Task 5 — Flexbox &amp; CSS Grid Demo</p>
+</footer>
+
+</body>
+</html>

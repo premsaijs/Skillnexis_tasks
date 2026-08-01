@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Task 2 — Responsive Navigation Bar</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">Nav<span>Bar</span></a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">About</a>
+
+      <div class="dropdown">
+        <button class="nav-item dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Services
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-link">Web Design</a>
+          <a href="#" class="dropdown-link">Development</a>
+          <a href="#" class="dropdown-link">Consulting</a>
+          <a href="#" class="dropdown-link">Support</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-item">Portfolio</a>
+
+      <div class="dropdown">
+        <button class="nav-item dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Resources
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-link">Blog</a>
+          <a href="#" class="dropdown-link">Guides</a>
+          <a href="#" class="dropdown-link">FAQ</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-item">Contact</a>
+    </nav>
+
+    <a href="#" class="btn-cta">Get Started</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="demo-content">
+  <h1>Responsive Navigation Bar</h1>
+  <p>
+    Sticky on scroll, with a desktop dropdown menu and an animated mobile hamburger.
+    Resize the window or scroll down to see it in action.
+  </p>
+  <div class="spacer"></div>
+  <p class="hint">↑ Keep scrolling to see the sticky navbar shrink and gain a background.</p>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

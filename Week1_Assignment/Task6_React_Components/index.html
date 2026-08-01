@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Task 6 — React Components Practice</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+
+<!-- React 18 (development builds) + Babel standalone: lets us write plain .jsx files
+     and run them directly in the browser with no npm install / build step. -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- IMPORTANT: the component scripts below use type="text/babel" with an
+     external `src`, which Babel Standalone fetches via XHR at runtime.
+     Browsers block that fetch under the file:// protocol (a same-origin/
+     CORS restriction), so double-clicking this file straight from a file
+     browser opens to a blank page. This check catches that case early and
+     shows a clear instruction instead of a silent blank screen. -->
+<script>
+  if (window.location.protocol === "file:") {
+    document.getElementById("root").innerHTML = `
+      <div style="max-width:560px;margin:4rem auto;padding:2rem;
+        font-family:Inter,sans-serif;background:rgba(255,255,255,0.04);
+        border:1px solid rgba(255,255,255,0.09);border-radius:16px;
+        color:#e8ecf1;line-height:1.6;">
+        <h2 style="font-family:'Space Grotesk',sans-serif;margin-bottom:0.8rem;">
+          Run this with a local server
+        </h2>
+        <p style="color:#8b93a7;margin-bottom:1rem;">
+          This page loads its React components as separate files, which browsers
+          block from fetching over <code>file://</code>. From inside this folder, run:
+        </p>
+        <pre style="background:#0d1220;padding:0.9rem 1.1rem;border-radius:8px;
+          overflow-x:auto;margin-bottom:0.8rem;">python -m http.server 8000</pre>
+        <p style="color:#8b93a7;">or <code>npx serve .</code>, then open the printed
+          <code>http://localhost</code> address in your browser.</p>
+      </div>`;
+  }
+</script>
+
+<!-- Components (each is a reusable, self-contained piece) -->
+<script type="text/babel" src="components/Button.jsx"></script>
+<script type="text/babel" src="components/Header.jsx"></script>
+<script type="text/babel" src="components/Footer.jsx"></script>
+<script type="text/babel" src="components/Card.jsx"></script>
+<script type="text/babel" src="components/Profile.jsx"></script>
+
+<!-- App: composes the components together, passing data via props -->
+<script type="text/babel" src="App.jsx"></script>
+
+</body>
+</html>

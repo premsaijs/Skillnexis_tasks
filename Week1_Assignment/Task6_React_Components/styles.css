@@ -1,0 +1,105 @@
+:root {
+  --bg: #0a0e14;
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.09);
+  --accent-violet: #6c5ce7;
+  --accent-teal: #23d5ab;
+  --accent-amber: #ffb347;
+  --text-primary: #e8ecf1;
+  --text-muted: #8b93a7;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text-primary); font-family: var(--font-body); }
+button { font-family: inherit; }
+
+/* Focus visibility for keyboard users */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent-teal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Header */
+.app-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.3rem 2rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+.app-header .logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; }
+.app-header nav { display: flex; gap: 1.6rem; }
+.app-header nav a { color: var(--text-muted); font-size: 0.9rem; text-decoration: none; }
+.app-header nav a:hover { color: var(--text-primary); }
+
+/* Layout */
+.app-main { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
+.section-title { font-family: var(--font-display); font-size: 1.4rem; margin: 2.5rem 0 1.2rem; }
+.section-title:first-child { margin-top: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-teal); margin-bottom: 0.5rem; }
+
+/* Button component variants */
+.btn {
+  border: none; border-radius: 999px; font-weight: 600; cursor: pointer;
+  padding: 0.7rem 1.5rem; font-size: 0.9rem; transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: linear-gradient(120deg, var(--accent-violet), var(--accent-teal)); color: #060810; }
+.btn-outline { background: transparent; border: 1px solid var(--glass-border); color: var(--text-primary); }
+.btn-danger { background: #ff6b6b; color: #fff; }
+.btn-row { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+
+/* Card component */
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem; }
+.card {
+  background: var(--glass); border: 1px solid var(--glass-border); border-radius: 16px;
+  padding: 1.5rem; transition: transform 0.25s ease;
+}
+.card:hover { transform: translateY(-4px); }
+.card-icon { font-size: 1.8rem; margin-bottom: 0.8rem; display: block; }
+.card h3 { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 0.5rem; }
+.card p { color: var(--text-muted); font-size: 0.88rem; }
+
+/* Profile component */
+.profile-card {
+  display: flex; align-items: center; gap: 1.3rem;
+  background: var(--glass); border: 1px solid var(--glass-border); border-radius: 18px;
+  padding: 1.6rem;
+}
+.profile-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: linear-gradient(120deg, var(--accent-violet), var(--accent-teal));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: #060810;
+  flex-shrink: 0;
+}
+.profile-info h3 { font-family: var(--font-display); font-size: 1.1rem; }
+.profile-info p { color: var(--text-muted); font-size: 0.88rem; margin-top: 0.2rem; }
+.profile-tags { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+.profile-tags span {
+  font-family: var(--font-mono); font-size: 0.72rem;
+  background: rgba(108,92,231,0.15); color: #c9c1ff;
+  padding: 0.25rem 0.6rem; border-radius: 6px;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center; padding: 2.5rem 1.5rem; color: var(--text-muted);
+  font-size: 0.85rem; border-top: 1px solid var(--glass-border); margin-top: 3rem;
+}
+
+/* Counter demo (state example) */
+.counter-box {
+  display: flex; align-items: center; gap: 1rem;
+  background: var(--glass); border: 1px solid var(--glass-border); border-radius: 16px;
+  padding: 1.3rem 1.6rem; width: fit-content;
+}
+.counter-value { font-family: var(--font-display); font-size: 1.6rem; min-width: 2.5ch; text-align: center; }
+
+@media (max-width: 760px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .app-header nav { display: none; }
+  .profile-card { flex-direction: column; text-align: center; }
+}

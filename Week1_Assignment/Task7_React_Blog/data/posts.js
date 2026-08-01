@@ -1,0 +1,77 @@
+// posts.js
+// Blog post data as a plain global array — lets the app run by just opening
+// index.html, no local server required. See data/posts.json for the same
+// data in JSON form if you'd rather fetch() it from a server.
+
+const BLOG_POSTS = [
+  {
+    id: 1,
+    title: "Semantic Search 101: From Keywords to Embeddings",
+    excerpt: "Why vector embeddings beat keyword matching for understanding user intent, and how FAISS makes it fast.",
+    category: "Machine Learning",
+    author: "Prem Sai J S",
+    date: "2026-06-02",
+    readTime: "6 min read",
+    cover: "🧠",
+  },
+  {
+    id: 2,
+    title: "Cyclomatic Complexity, Explained With Real Code",
+    excerpt: "A practical walkthrough of how to measure code complexity — and why fewer branches usually means fewer bugs.",
+    category: "Java",
+    author: "Prem Sai J S",
+    date: "2026-05-18",
+    readTime: "5 min read",
+    cover: "🧮",
+  },
+  {
+    id: 3,
+    title: "Building a Support Bot With FLAN-T5",
+    excerpt: "Combining retrieval with generation to answer customer queries that a static FAQ can't cover.",
+    category: "Machine Learning",
+    author: "Prem Sai J S",
+    date: "2026-05-04",
+    readTime: "8 min read",
+    cover: "🤖",
+  },
+  {
+    id: 4,
+    title: "CSS Grid vs Flexbox: Picking the Right Tool",
+    excerpt: "One is one-dimensional, the other is two. Here's how to decide which layout system fits your UI.",
+    category: "Web Dev",
+    author: "Prem Sai J S",
+    date: "2026-04-22",
+    readTime: "4 min read",
+    cover: "📐",
+  },
+  {
+    id: 5,
+    title: "Java Swing Isn't Dead: Building a Modern Desktop UI",
+    excerpt: "Dark themes, custom components, and clean architecture — Swing still has a place in 2026.",
+    category: "Java",
+    author: "Prem Sai J S",
+    date: "2026-04-09",
+    readTime: "7 min read",
+    cover: "🖥️",
+  },
+  {
+    id: 6,
+    title: "Git Habits Every First-Year Should Build Early",
+    excerpt: "Branching, commit messages, and the muscle memory that saves you during a group project deadline.",
+    category: "Tools",
+    author: "Prem Sai J S",
+    date: "2026-03-27",
+    readTime: "3 min read",
+    cover: "🌿",
+  },
+  {
+    id: 7,
+    title: "Reading a Confusion Matrix Without Panicking",
+    excerpt: "Precision, recall, and F1 — demystified with a single worked example.",
+    category: "Machine Learning",
+    author: "Prem Sai J S",
+    date: "2026-03-11",
+    readTime: "5 min read",
+    cover: "📊",
+  },
+];

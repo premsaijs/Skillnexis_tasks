@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aurora — Modern Essentials</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">Aurora</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">🔍</button>
+      <button class="icon-btn cart-btn" aria-label="Cart, 3 items">
+        🛒 <span class="cart-count" aria-hidden="true">3</span>
+      </button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">New season, new essentials</p>
+    <h1>Objects for a <span class="gradient-text">quieter</span> everyday.</h1>
+    <p class="hero-desc">
+      Aurora curates minimal, well-made goods — from desk tools to travel gear —
+      designed to disappear into your routine, not clutter it.
+    </p>
+    <div class="hero-actions">
+      <a href="#shop" class="btn btn-primary">Shop Collection</a>
+      <a href="#categories" class="btn btn-outline">Browse Categories</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card card-1">🎧</div>
+    <div class="hero-card card-2">⌚</div>
+    <div class="hero-card card-3">💼</div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" id="shop">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Featured</p>
+      <h2>Bestsellers this week</h2>
+    </div>
+  </div>
+  <div class="product-grid">
+
+    <article class="product-card">
+      <div class="product-img" style="background:linear-gradient(135deg,#6c5ce7,#3b2f8f);">🎧</div>
+      <span class="product-badge">Bestseller</span>
+      <h3>Aria Wireless Headphones</h3>
+      <p class="product-desc">40-hour battery, active noise cancellation.</p>
+      <div class="product-footer">
+        <span class="price">$129.00</span>
+        <button class="btn-add">Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img" style="background:linear-gradient(135deg,#23d5ab,#0e7a5f);">⌚</div>
+      <span class="product-badge">New</span>
+      <h3>Pulse Fitness Watch</h3>
+      <p class="product-desc">Heart-rate, sleep, and workout tracking.</p>
+      <div class="product-footer">
+        <span class="price">$89.00</span>
+        <button class="btn-add">Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img" style="background:linear-gradient(135deg,#ffb347,#c07a10);">💼</div>
+      <h3>Commute Leather Backpack</h3>
+      <p class="product-desc">Water-resistant, padded 16" laptop sleeve.</p>
+      <div class="product-footer">
+        <span class="price">$149.00</span>
+        <button class="btn-add">Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-img" style="background:linear-gradient(135deg,#ff6b6b,#a13232);">📷</div>
+      <span class="product-badge">Limited</span>
+      <h3>Frame Instant Camera</h3>
+      <p class="product-desc">Retro-styled instant film camera.</p>
+      <div class="product-footer">
+        <span class="price">$99.00</span>
+        <button class="btn-add">Add to Cart</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section alt" id="categories">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Browse</p>
+      <h2>Shop by category</h2>
+    </div>
+  </div>
+  <div class="category-grid">
+    <div class="category-card">
+      <span class="cat-icon">🎧</span>
+      <h3>Audio</h3>
+      <p>18 products</p>
+    </div>
+    <div class="category-card">
+      <span class="cat-icon">⌚</span>
+      <h3>Wearables</h3>
+      <p>12 products</p>
+    </div>
+    <div class="category-card">
+      <span class="cat-icon">💼</span>
+      <h3>Bags &amp; Travel</h3>
+      <p>24 products</p>
+    </div>
+    <div class="category-card">
+      <span class="cat-icon">🖥️</span>
+      <h3>Desk &amp; Office</h3>
+      <p>31 products</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="section-head center">
+    <p class="eyebrow">Reviews</p>
+    <h2>Loved by our customers</h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"The build quality is unreal for the price. My headphones haven't left my ears in a month."</p>
+      <div class="testimonial-author">
+        <div class="avatar">AR</div>
+        <div>
+          <strong>Aditi Rao</strong>
+          <span>Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Fast shipping, minimal packaging, and the watch battery genuinely lasts a week."</p>
+      <div class="testimonial-author">
+        <div class="avatar">KM</div>
+        <div>
+          <strong>Karan Mehta</strong>
+          <span>Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Aurora's backpack replaced three bags I used to carry. Worth every rupee."</p>
+      <div class="testimonial-author">
+        <div class="avatar">SN</div>
+        <div>
+          <strong>Sara Nair</strong>
+          <span>Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-inner">
+    <h2>Get 10% off your first order</h2>
+    <p>Join our list for early access to drops and members-only deals.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="you@example.com" id="newsletterEmail" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="newsletter-note" id="newsletterNote" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Aurora</h3>
+      <p>Objects for a quieter everyday.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#">Audio</a>
+      <a href="#">Wearables</a>
+      <a href="#">Bags &amp; Travel</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">FAQ</a>
+    </div>
+  </div>
+  <p class="footer-bottom">© <span id="year"></span> Aurora. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
