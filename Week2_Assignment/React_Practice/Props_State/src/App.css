@@ -1,0 +1,50 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  text-align: left;
+}
+
+.app-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.counter {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+.counter__value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.counter__controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.counter__controls button {
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.counter__controls button:hover {
+  background: #f0f0f0;
+}

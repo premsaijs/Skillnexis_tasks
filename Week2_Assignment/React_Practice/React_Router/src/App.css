@@ -1,0 +1,57 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  text-align: left;
+}
+
+.app-subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.75rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #333;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+.navbar__link--active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.page {
+  padding: 0.5rem 0;
+}
+
+.contact-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
